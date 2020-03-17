@@ -1,0 +1,15 @@
+#!/usr/local/bin/fontforge
+
+INCLUDE_LEGACY_KERN = 0x800
+
+Open("Xolonium-Regular.sfd")
+MergeFonts("Xolonium-Dingbats.sfd")
+MergeFeature("Xolonium-Kern.fea")
+Generate("Xolonium-Regular.otf", "", INCLUDE_LEGACY_KERN)
+Close()
+
+Open("Xolonium-Bold.sfd")
+MergeFonts("Xolonium-Dingbats.sfd")
+MergeFeature("Xolonium-Kern.fea")
+Generate("Xolonium-Bold.otf", "", INCLUDE_LEGACY_KERN)
+Quit(0)

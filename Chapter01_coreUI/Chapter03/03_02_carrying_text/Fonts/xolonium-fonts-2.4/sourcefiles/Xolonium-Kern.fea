@@ -1,0 +1,1166 @@
+lookup kernLatin {
+
+	# Uppercase Classes
+		@A = [A Agrave Aacute Acircumflex Atilde Adieresis Aring Amacron Abreve Aogonek Aringacute];
+		@D = [D Eth Thorn Dcaron Dcroat uni1E0A];
+		@F = [F uni1E1E];
+		@G = [G Gcircumflex Gbreve Gdotaccent Gcommaaccent];
+		@J = [J Jcircumflex];
+		@K = [K Kcommaaccent];
+		@L = [L Lacute Lcommaaccent Lcaron Ldot Lslash];
+		@P = [P uni1E56];
+		@S = [S Sacute Scircumflex Scedilla Scaron Scommaaccent uni1E60];
+		@T = [T Tcommaaccent Tcaron Tbar uni021A uni1E6A];
+		@V = [V];
+		@W = [W Wcircumflex Wgrave Wacute Wdieresis];
+		@Y = [Y Yacute Ycircumflex Ydieresis Ygrave];
+		@Z = [Z Zacute Zdotaccent Zcaron];
+		@X = [X];
+		@AE = [AE AEacute];
+		@I.diacritic = [Icircumflex Idieresis Itilde Imacron Ibreve];
+
+	# Lowercase Subclasses (included in other classes)
+		@subclass.b = [b thorn uni1E03];
+		@subclass.c = [c ccedilla cacute ccircumflex cdotaccent ccaron];
+		@subclass.e = [e egrave eacute ecircumflex edieresis emacron ebreve edotaccent eogonek ecaron oe];
+		@subclass.f = [f longs florin uni1E1F uniFB00];
+		@subclass.g = [g q gcircumflex gbreve gdotaccent gcommaaccent];
+		@subclass.h = [h hcircumflex hbar];
+		@subclass.k = [k kcommaaccent];
+		@subclass.m = [m uni1E41];
+		@subclass.n = [n ntilde nacute ncommaaccent ncaron eng];
+		@subclass.o = [o ograve oacute ocircumflex otilde odieresis oslash omacron obreve ohungarumlaut oslashacute];
+		@subclass.p = [p uni1E57];
+		@subclass.u = [u ugrave uacute ucircumflex udieresis utilde umacron ubreve uring uhungarumlaut uogonek];
+		@subclass.y = [y yacute ydieresis ycircumflex ygrave];
+		@subclass.dotless = [dotlessi uni0237];
+		@subclass.r.diacritic = [racute rcaron];
+
+	# Lowercase Classes
+		@a = [a agrave aacute acircumflex atilde adieresis aring ae amacron abreve aogonek aeacute];
+		@b = [@subclass.b @subclass.h @subclass.k napostrophe];
+		@c = [@subclass.c @subclass.e @subclass.g @subclass.m @subclass.n @subclass.o @subclass.p q @subclass.u @subclass.dotless kgreenlandic];
+		@d = [d eth dcroat uni1E0B];
+		@f = [@subclass.f lcaron @subclass.r.diacritic aringacute];
+		@r = [r rcommaaccent];
+		@s = [s sacute scircumflex scedilla scaron scommaaccent uni1E61];
+		@t = [t tcommaaccent tbar uni021B uni1E6B];
+		@v = [v @subclass.y];
+		@w = [w wcircumflex wgrave wacute wdieresis];
+		@x = [x];
+		@z = [z zacute zdotaccent zcaron];
+		@i.diacritic = [icircumflex idieresis itilde imacron ibreve jcircumflex];
+
+	# Prioritised Pairs (preventing overlaps)
+		pos Aogonek j 20;
+		pos Aogonek jcircumflex 20;
+		pos Aogonek uni0237 20;
+
+		pos Eogonek j 20;
+		pos Eogonek jcircumflex 20;
+		pos Eogonek uni0237 20;
+
+		pos Iogonek j 20;
+		pos Iogonek jcircumflex 20;
+		pos Iogonek uni0237 20;
+
+		pos eogonek j 10;
+		pos eogonek jcircumflex 10;
+		pos eogonek uni0237 10;
+
+		pos iogonek j 30;
+		pos iogonek jcircumflex 30;
+		pos iogonek uni0237 30;
+
+		pos tcommaaccent j 30;
+		pos tcommaaccent jcircumflex 30;
+		pos tcommaaccent uni0237 30;
+
+	# Uppercase Uppercase
+		pos @A @T -140;
+		pos @A @V -140;
+		pos @A @W -90;
+		pos @A @Y -150;
+
+		pos @D @A -40;
+		pos @D @T -40;
+		pos @D @V -40;
+		pos @D @W -20;
+		pos @D @X -30;
+		pos @D @Y -40;
+		pos @D @AE -40;
+
+		pos @F @A -100;
+		pos @F @J -60;
+		pos @F @T 20;
+		pos @F @Z -20;
+		pos @F @AE -100;
+
+		pos @G @T -30;
+		pos @G @V -30;
+		pos @G @W -30;
+		pos @G @Y -40;
+
+		pos @K @T -30;
+		pos @K @V -20;
+		pos @K @Y -30;
+
+		pos @L @T -130;
+		pos @L @V -90;
+		pos @L @W -60;
+		pos @L @Y -130;
+
+		pos @P @A -90;
+		pos @P @J -50;
+		pos @P @Z -20;
+		pos @P @AE -90;
+
+		pos @S @T -30;
+		pos @S @V -30;
+		pos @S @W -30;
+		pos @S @Y -40;
+
+		pos @T @A -140;
+		pos @T @J -130;
+		pos @T @T 40;
+		pos @T @AE -140;
+
+		pos @V @A -140;
+		pos @V @J -90;
+		pos @V @Z -20;
+		pos @V @AE -140;
+
+		pos @W @A -90;
+		pos @W @J -70;
+		pos @W @Z -20;
+		pos @W @AE -90;
+
+		pos @Y @A -150;
+		pos @Y @J -130;
+		pos @Y @Z -20;
+		pos @Y @AE -150;
+
+		pos @Z @V -20;
+		pos @Z @W -20;
+		pos @Z @Y -20;
+
+		pos @I.diacritic @I.diacritic 80;
+
+	# Uppercase Lowercase
+		pos @A @v -80;
+		pos @A @w -50;
+
+		pos @D @a -20;
+		pos @D @z -20;
+
+		pos @F @a -30;
+		pos @F @c -20;
+		pos @F @d -20;
+		pos @F @r -20;
+		pos @F @s -20;
+		pos @F @z -20;
+		pos @F @i.diacritic 20;
+
+		pos @K @v -50;
+		pos @K @w -30;
+
+		pos @L @v -30;
+		pos @L @w -20;
+
+		pos @P @a -30;
+
+		pos @T @a -70;
+		pos @T @c -50;
+		pos @T @d -50;
+		pos @T @r -50;
+		pos @T @s -50;
+		pos @T @v -50;
+		pos @T @w -50;
+		pos @T @x -50;
+		pos @T @z -50;
+		pos @T @i.diacritic 40;
+
+		pos @V @a -90;
+		pos @V @c -70;
+		pos @V @d -70;
+		pos @V @r -70;
+		pos @V @s -70;
+		pos @V @v -30;
+		pos @V @w -30;
+		pos @V @x -30;
+		pos @V @z -70;
+		pos @V @i.diacritic 40;
+
+		pos @W @a -60;
+		pos @W @c -40;
+		pos @W @d -40;
+		pos @W @r -40;
+		pos @W @s -40;
+		pos @W @z -40;
+		pos @W @i.diacritic 40;
+
+		pos @X @v -30;
+		pos @X @w -20;
+		pos @X @i.diacritic 40;
+
+		pos @Y @a -100;
+		pos @Y @c -80;
+		pos @Y @d -80;
+		pos @Y @r -80;
+		pos @Y @s -80;
+		pos @Y @v -50;
+		pos @Y @w -50;
+		pos @Y @x -50;
+		pos @Y @z -70;
+		pos @Y @i.diacritic 40;
+
+	# Lowercase Lowercase
+		pos @f @a -30;
+		pos @r @a -30;
+		pos @s @v -20;
+		pos @v @a -20;
+
+		pos @i.diacritic @i.diacritic 80;
+
+	# Lowercase Uppercase
+		pos @a @T -50;
+		pos @a @V -40;
+		pos @a @W -20;
+		pos @a @Y -80;
+
+		pos @b @T -50;
+		pos @b @V -40;
+		pos @b @W -20;
+		pos @b @Y -80;
+
+		pos @c @T -50;
+		pos @c @V -40;
+		pos @c @W -20;
+		pos @c @Y -80;
+
+		pos @f @A -40;
+		pos @f @J -60;
+		pos @f @AE -40;
+
+		pos @r @A -40;
+		pos @r @J -60;
+		pos @r @T -40;
+		pos @r @V -30;
+		pos @r @X -30;
+		pos @r @Y -70;
+		pos @r @AE -40;
+
+		pos @s @T -70;
+		pos @s @V -50;
+		pos @s @W -40;
+		pos @s @Y -100;
+
+		pos @t @T -40;
+		pos @t @V -30;
+		pos @t @Y -40;
+
+		pos @v @A -80;
+		pos @v @J -40;
+		pos @v @T -50;
+		pos @v @V -30;
+		pos @v @X -30;
+		pos @v @Y -50;
+		pos @v @AE -80;
+
+		pos @w @A -50;
+		pos @w @J -20;
+		pos @w @T -50;
+		pos @w @V -30;
+		pos @w @X -20;
+		pos @w @Y -50;
+		pos @w @AE -50;
+
+		pos @x @T -50;
+		pos @x @V -30;
+		pos @x @Y -50;
+
+		pos @z @T -50;
+		pos @z @V -40;
+		pos @z @W -40;
+		pos @z @Y -60;
+
+		pos @i.diacritic @T 40;
+		pos @i.diacritic @V 40;
+		pos @i.diacritic @W 40;
+		pos @i.diacritic @X 40;
+		pos @i.diacritic @Y 40;
+
+} kernLatin;
+
+
+lookup kernGreek {
+
+	# Uppercase Classes
+		@Alpha = [Alpha Delta Lambda];
+		@Gamma = [Gamma];
+		@Zeta = [Zeta];
+		@Kappa = [Kappa];
+		@Rho = [Rho];
+		@Tau = [Tau];
+		@Upsilon = [Upsilon Upsilondieresis];
+		@Phi = [Phi];
+		@Chi = [Chi];
+		@Psi = [Psi];
+		@Omega = [Omega];
+
+		@Alpha.tonos = [Alphatonos];
+		@Epsilon.tonos = [Epsilontonos Etatonos Iotatonos Omicrontonos];
+		@Upsilon.tonos = [Upsilontonos];
+		@Omega.tonos = [Omegatonos];
+		@Iota.diacritic = [Iotadieresis];
+
+	# Lowercase Subclasses (included in other classes)
+		@subclass.alpha = [alpha alphatonos];
+		@subclass.epsilon = [epsilon epsilontonos];
+		@subclass.eta = [eta etatonos];
+		@subclass.omicron = [omicron omicrontonos];
+		@subclass.upsilon = [upsilon upsilontonos upsilondieresis upsilondieresistonos];
+
+	# Lowercase Classes
+		@alpha = [@subclass.alpha @subclass.epsilon @subclass.eta kappa mu @subclass.omicron rho sigma1 @subclass.upsilon phi psi];
+		@gamma = [gamma nu];
+		@delta = [delta zeta];
+		@iota = [iota];
+		@lambda = [lambda];
+		@pi = [pi tau];
+		@sigma = [sigma];
+		@chi = [chi];
+		@omega = [omega omegatonos];
+		@iota.diacritic = [iotadieresis iotadieresistonos];
+
+	# Uppercase Uppercase
+		pos @Alpha @Tau -140;
+		pos @Alpha @Upsilon -150;
+		pos @Alpha @Phi -20;
+		pos @Alpha @Psi -50;
+		pos @Alpha @Epsilon.tonos -80;
+		pos @Alpha @Upsilon.tonos -80;
+		pos @Alpha @Omega.tonos -80;
+
+		pos @Alpha.tonos @Tau -140;
+		pos @Alpha.tonos @Upsilon -150;
+		pos @Alpha.tonos @Phi -20;
+		pos @Alpha.tonos @Psi -50;
+		pos @Alpha.tonos @Epsilon.tonos -80;
+		pos @Alpha.tonos @Upsilon.tonos -80;
+		pos @Alpha.tonos @Omega.tonos -80;
+
+		pos @Gamma @Alpha -140;
+		pos @Gamma @Tau 40;
+		pos @Gamma @Phi -20;
+		pos @Gamma @Omega -20;
+
+		pos @Zeta @Upsilon -20;
+
+		pos @Kappa @Tau -30;
+		pos @Kappa @Upsilon -30;
+		pos @Kappa @Phi -20;
+		pos @Kappa @Psi -20;
+
+		pos @Rho @Alpha -90;
+
+		pos @Tau @Alpha -140;
+		pos @Tau @Tau 40;
+		pos @Tau @Phi -20;
+		pos @Tau @Omega -20;
+
+		pos @Upsilon @Alpha -150;
+		pos @Upsilon @Zeta -20;
+		pos @Upsilon @Phi -30;
+		pos @Upsilon @Omega -30;
+
+		pos @Upsilon.tonos @Alpha -150;
+		pos @Upsilon.tonos @Zeta -20;
+		pos @Upsilon.tonos @Phi -30;
+		pos @Upsilon.tonos @Omega -30;
+
+		pos @Phi @Alpha -20;
+		pos @Phi @Tau -20;
+		pos @Phi @Chi -20;
+		pos @Phi @Upsilon -30;
+
+		pos @Chi @Phi -20;
+
+		pos @Psi @Alpha -50;
+
+		pos @Omega @Tau -20;
+		pos @Omega @Upsilon -30;
+
+		pos @Omega.tonos @Tau -20;
+		pos @Omega.tonos @Upsilon -30;
+
+		pos @Iota.diacritic @Iota.diacritic 110;
+
+	# Uppercase Lowercase
+		pos @Alpha @gamma -80;
+		pos @Alpha @pi -60;
+		pos @Alpha @chi -50;
+
+		pos @Alpha.tonos @gamma -80;
+		pos @Alpha.tonos @pi -60;
+		pos @Alpha.tonos @chi -50;
+
+		pos @Gamma @alpha -50;
+		pos @Gamma @gamma -50;
+		pos @Gamma @delta -30;
+		pos @Gamma @iota -50;
+		pos @Gamma @pi -50;
+		pos @Gamma @sigma -50;
+		pos @Gamma @chi -50;
+		pos @Gamma @omega -60;
+		pos @Gamma @iota.diacritic 60;
+
+		pos @Kappa @gamma -50;
+		pos @Kappa @pi -60;
+
+		pos @Rho @omega -20;
+
+		pos @Tau @alpha -50;
+		pos @Tau @gamma -50;
+		pos @Tau @delta -30;
+		pos @Tau @iota -50;
+		pos @Tau @pi -50;
+		pos @Tau @sigma -50;
+		pos @Tau @chi -50;
+		pos @Tau @omega -60;
+		pos @Tau @iota.diacritic 60;
+
+		pos @Upsilon @alpha -80;
+		pos @Upsilon @gamma -50;
+		pos @Upsilon @delta -30;
+		pos @Upsilon @iota -50;
+		pos @Upsilon @pi -80;
+		pos @Upsilon @sigma -80;
+		pos @Upsilon @chi -50;
+		pos @Upsilon @omega -90;
+		pos @Upsilon @iota.diacritic 60;
+
+		pos @Upsilon.tonos @alpha -80;
+		pos @Upsilon.tonos @gamma -50;
+		pos @Upsilon.tonos @delta -30;
+		pos @Upsilon.tonos @iota -50;
+		pos @Upsilon.tonos @pi -80;
+		pos @Upsilon.tonos @sigma -80;
+		pos @Upsilon.tonos @chi -50;
+		pos @Upsilon.tonos @omega -90;
+		pos @Upsilon.tonos @iota.diacritic 60;
+
+		pos @Chi @gamma -30;
+		pos @Chi @pi -60;
+		pos @Chi @chi -30;
+		pos @Chi @iota.diacritic 60;
+
+	# Lowercase Lowercase
+		pos @gamma @lambda -20;
+		pos @gamma @omega -20;
+
+		pos @iota @gamma -30;
+		pos @iota @pi -30;
+
+		pos @lambda @gamma -80;
+		pos @lambda @pi -80;
+		pos @lambda @chi -40;
+
+		pos @pi @lambda -20;
+		pos @pi @omega -20;
+
+		pos @chi @omega -20;
+
+		pos @sigma @lambda -20;
+		pos @sigma @omega -20;
+
+		pos @omega @gamma -20;
+		pos @omega @pi -20;
+		pos @omega @chi -20;
+
+		pos @iota.diacritic @iota.diacritic 70;
+
+	# Lowercase Uppercase
+		pos @alpha @Tau -50;
+		pos @alpha @Upsilon -80;
+
+		pos @gamma @Alpha -80;
+		pos @gamma @Tau -50;
+		pos @gamma @Upsilon -50;
+		pos @gamma @Chi -30;
+
+		pos @iota @Tau -50;
+		pos @iota @Upsilon -50;
+		pos @iota @Phi -30;
+		pos @iota @Psi -30;
+
+		pos @lambda @Tau -120;
+		pos @lambda @Upsilon -130;
+		pos @lambda @Phi -30;
+		pos @lambda @Psi -60;
+
+		pos @pi @Alpha -40;
+		pos @pi @Tau -40;
+		pos @pi @Upsilon -70;
+
+		pos @sigma @Alpha -40;
+		pos @sigma @Tau -40;
+		pos @sigma @Upsilon -70;
+
+		pos @chi @Alpha -50;
+		pos @chi @Tau -50;
+		pos @chi @Upsilon -50;
+		pos @chi @Chi -30;
+
+		pos @omega @Tau -60;
+		pos @omega @Upsilon -90;
+
+		pos @iota.diacritic @Tau 40;
+		pos @iota.diacritic @Upsilon 40;
+		pos @iota.diacritic @Chi 40;
+
+} kernGreek;
+
+
+lookup kernCyrillic {
+
+	# Uppercase Classes
+		@A.A = [afii10017 uni04D0 uni04D2];
+		@Be.S = [afii10018 afii10054 uni0494];
+		@Ge.IT = [afii10020 afii10050 afii10052 uni0492 uni04A4];
+		@De.descender.jI.descender = [afii10021];
+		@Dje.Th = [afii10051 afii10060 afii10044 uni04B4];
+		@Zhe.XK = [afii10024 uni0496 uni04C1 uni04DC];
+		@Yi.ii = [afii10056];
+		@Je.J = [afii10057];
+		@Ka.K = [afii10028 afii10061 uni049A uni049C uni049E];
+		@El.jI = [afii10029];
+		@Lje.jb = [afii10058];
+		@Nje.Hb = [afii10046 afii10059 afii10146 uni048C uni04A6 uni04A8 uni04BA];
+		@Er.P = [afii10034 uni048E];
+		@Te.T = [afii10036 uni04AC];
+		@U.y = [afii10037 afii10062 uni04EE uni04F0 uni04F2];
+		@Ef.Phi = [afii10038];
+		@Kha.X = [afii10039 uni04B2];
+		@Tse.LI.descender = [afii10040 afii10043 uni04A2];
+		@Che._P = [afii10041 uni04B6 uni04B8 uni04CB uni04F4];
+
+		@Ae.AE = [uni04D4];
+		@BashkirKa.TK = [uni04A0];
+		@Ue.Y = [uni04AE uni04B0];
+		@AbkhazianChe.e = [uni04BC uni04BE];
+		@Izhitsa.VT = [afii10148];
+
+	# Lowercase Subclasses (included in other classes)
+		@subclass.ye.e = [afii10070 afii10071 uni0450 uni04D7];
+		@subclass.zhe.x = [afii10072 uni0497 uni04C2 uni04DD];
+		@subclass.ze._c = [afii10073 uni0499 uni04DF uni04E1];
+		@subclass.i.N = [afii10074 afii10075 uni045D uni04E3 uni04E5];
+		@subclass.ka.K = [afii10076 afii10109 uni049B uni049D uni049F];
+		@subclass.em.M = [afii10078 afii10079 afii10081 afii10090 afii10093 afii10096 afii10193 uni04C8 uni04F9];
+		@subclass.o.o = [afii10080 afii10086 afii10095 afii10101 afii10195 afii10846 uni04DB uni04E7 uni04E9 uni04EB uni04ED];
+		@subclass.er.p = [afii10082 uni048F];
+		@subclass.es.c = [afii10083 uni04AB];
+
+	# Lowercase Classes
+		@a.a = [afii10065 uni04D1 uni04D3 uni04D5];
+		@be.6 = [afii10066];
+		@ve.B = [afii10067 @subclass.ye.e @subclass.zhe.x @subclass.ze._c @subclass.i.N @subclass.ka.K @subclass.em.M @subclass.o.o @subclass.er.p @subclass.es.c afii10097 uni04C4];
+		@ge.IT = [afii10068 afii10100 uni0493 uni04A5];
+		@ge.IT.upturn = [afii10098];
+		@de.descender.jI.descender = [afii10069];
+		@dje.b = [afii10099 afii10108];
+		@dze.s = [afii10102 uni0495];
+		@yi.ii = [afii10104];
+		@el.jI = [afii10077];
+		@lje.jb = [afii10106];
+		@te.T = [afii10084 uni04AD];
+		@u.y = [afii10085 afii10110 afii10196 uni04AF uni04B1 uni04EF uni04F1 uni04F3];
+		@kha.x = [afii10087 uni04B3];
+		@tse.LI.descender = [afii10088 afii10091 uni04A3];
+		@che._P = [afii10089 uni04B7 uni04B9 uni04CC uni04F5];
+		@yer.Tb = [afii10092 uni04B5];
+		@softsign.b = [afii10094 afii10107 afii10194 uni048D uni04A7 uni04A9 uni04BB];
+
+		@bashkirka.TK = [uni04A1];
+		@abkhazianche.e = [uni04BD uni04BF];
+
+	# Prioritised Pairs (preventing overlaps)
+		# Uppercase.descender j
+		pos afii10021 afii10105 50;
+		pos afii10040 afii10105 50;
+		pos afii10043 afii10105 50;
+		pos uni0496 afii10105 50;
+		pos uni049A afii10105 50;
+		pos uni04A2 afii10105 50;
+		pos uni04B2 afii10105 50;
+		pos uni04B4 afii10105 50;
+		pos uni04B6 afii10105 50;
+
+		# lowercase.descender j
+		pos afii10069 afii10105 50;
+		pos afii10088 afii10105 50;
+		pos afii10091 afii10105 50;
+		pos uni0497 afii10105 50;
+		pos uni049B afii10105 50;
+		pos uni04A3 afii10105 50;
+		pos uni04B3 afii10105 50;
+		pos uni04B5 afii10105 50;
+		pos uni04B7 afii10105 50;
+
+	# Uppercase Uppercase
+		pos @A.A @Dje.Th -140;
+		pos @A.A @Te.T -140;
+		pos @A.A @U.y -50;
+		pos @A.A @Ef.Phi -20;
+		pos @A.A @Che._P -90;
+		pos @A.A @BashkirKa.TK -140;
+		pos @A.A @Ue.Y -150;
+		pos @A.A @AbkhazianChe.e -90;
+		pos @A.A @Izhitsa.VT -140;
+
+		pos @Be.S @Dje.Th -30;
+		pos @Be.S @Te.T -30;
+		pos @Be.S @U.y -30;
+		pos @Be.S @BashkirKa.TK -30;
+		pos @Be.S @Ue.Y -50;
+		pos @Be.S @Izhitsa.VT -30;
+
+		pos @Ge.IT @A.A -140;
+		pos @Ge.IT @De.descender.jI.descender -100;
+		pos @Ge.IT @Dje.Th 40;
+		pos @Ge.IT @Zhe.XK -30;
+		pos @Ge.IT @Je.J -130;
+		pos @Ge.IT @El.jI -80;
+		pos @Ge.IT @Lje.jb -80;
+		pos @Ge.IT @Te.T 40;
+		pos @Ge.IT @Ae.AE -140;
+		pos @Ge.IT @BashkirKa.TK 40;
+
+		pos @De.descender.jI.descender @Te.T -50;
+		pos @De.descender.jI.descender @Dje.Th -50;
+		pos @De.descender.jI.descender @U.y -30;
+		pos @De.descender.jI.descender @Che._P -50;
+		pos @De.descender.jI.descender @BashkirKa.TK -50;
+		pos @De.descender.jI.descender @Ue.Y -50;
+		pos @De.descender.jI.descender @AbkhazianChe.e -50;
+		pos @De.descender.jI.descender @Izhitsa.VT -30;
+
+		pos @Dje.Th @Dje.Th -60;
+		pos @Dje.Th @Te.T -60;
+		pos @Dje.Th @U.y -50;
+		pos @Dje.Th @BashkirKa.TK -60;
+		pos @Dje.Th @Ue.Y -90;
+		pos @Dje.Th @Izhitsa.VT -70;
+
+		pos @Zhe.XK @Dje.Th -30;
+		pos @Zhe.XK @Te.T -30;
+		pos @Zhe.XK @U.y -30;
+		pos @Zhe.XK @Ef.Phi -20;
+		pos @Zhe.XK @Che._P -20;
+		pos @Zhe.XK @BashkirKa.TK -30;
+		pos @Zhe.XK @Ue.Y -30;
+		pos @Zhe.XK @AbkhazianChe.e -60;
+		pos @Zhe.XK @Izhitsa.VT -20;
+
+		pos @Yi.ii @Yi.ii 110;
+
+		pos @Ka.K @Dje.Th -30;
+		pos @Ka.K @Te.T -30;
+		pos @Ka.K @U.y -30;
+		pos @Ka.K @Ef.Phi -20;
+		pos @Ka.K @Che._P -20;
+		pos @Ka.K @BashkirKa.TK -30;
+		pos @Ka.K @Ue.Y -30;
+		pos @Ka.K @AbkhazianChe.e -60;
+		pos @Ka.K @Izhitsa.VT -20;
+
+		pos @Lje.jb @Dje.Th -60;
+		pos @Lje.jb @Te.T -60;
+		pos @Lje.jb @U.y -50;
+		pos @Lje.jb @BashkirKa.TK -60;
+		pos @Lje.jb @Ue.Y -90;
+		pos @Lje.jb @Izhitsa.VT -70;
+
+		pos @Nje.Hb @Dje.Th -60;
+		pos @Nje.Hb @Te.T -60;
+		pos @Nje.Hb @U.y -50;
+		pos @Nje.Hb @BashkirKa.TK -60;
+		pos @Nje.Hb @Ue.Y -90;
+		pos @Nje.Hb @Izhitsa.VT -70;
+
+		pos @Er.P @A.A -90;
+		pos @Er.P @De.descender.jI.descender -100;
+		pos @Er.P @Zhe.XK -20;
+		pos @Er.P @Je.J -50;
+		pos @Er.P @El.jI -70;
+		pos @Er.P @Lje.jb -70;
+		pos @Er.P @Ae.AE -90;
+
+		pos @Te.T @A.A -140;
+		pos @Te.T @De.descender.jI.descender -100;
+		pos @Te.T @Dje.Th 40;
+		pos @Te.T @Zhe.XK -30;
+		pos @Te.T @Je.J -130;
+		pos @Te.T @El.jI -80;
+		pos @Te.T @Lje.jb -80;
+		pos @Te.T @Te.T 40;
+		pos @Te.T @Ae.AE -140;
+		pos @Te.T @BashkirKa.TK 40;
+
+		pos @U.y @A.A -150;
+		pos @U.y @De.descender.jI.descender -110;
+		pos @U.y @Zhe.XK -30;
+		pos @U.y @Je.J -130;
+		pos @U.y @El.jI -90;
+		pos @U.y @Lje.jb -90;
+		pos @U.y @Ef.Phi -30;
+		pos @U.y @Ae.AE -150;
+		pos @U.y @AbkhazianChe.e -30;
+
+		pos @Ef.Phi @A.A -20;
+		pos @Ef.Phi @Zhe.XK -20;
+		pos @Ef.Phi @Ae.AE -20;
+		pos @Ef.Phi @Ue.Y -30;
+
+		pos @Kha.X @AbkhazianChe.e -30;
+
+		pos @Tse.LI.descender @Dje.Th -50;
+		pos @Tse.LI.descender @Te.T -50;
+		pos @Tse.LI.descender @U.y -30;
+		pos @Tse.LI.descender @Che._P -50;
+		pos @Tse.LI.descender @BashkirKa.TK -50;
+		pos @Tse.LI.descender @Ue.Y -50;
+		pos @Tse.LI.descender @AbkhazianChe.e -50;
+		pos @Tse.LI.descender @Izhitsa.VT -30;
+
+		pos @BashkirKa.TK @Dje.Th -30;
+		pos @BashkirKa.TK @Te.T -30;
+		pos @BashkirKa.TK @U.y -30;
+		pos @BashkirKa.TK @Ef.Phi -20;
+		pos @BashkirKa.TK @Che._P -20;
+		pos @BashkirKa.TK @BashkirKa.TK -30;
+		pos @BashkirKa.TK @Ue.Y -30;
+		pos @BashkirKa.TK @AbkhazianChe.e -60;
+		pos @BashkirKa.TK @Izhitsa.VT -20;
+
+		pos @Ue.Y @A.A -150;
+		pos @Ue.Y @De.descender.jI.descender -110;
+		pos @Ue.Y @Zhe.XK -30;
+		pos @Ue.Y @Je.J -130;
+		pos @Ue.Y @El.jI -90;
+		pos @Ue.Y @Lje.jb -90;
+		pos @Ue.Y @Ef.Phi -30;
+		pos @Ue.Y @Ae.AE -150;
+		pos @Ue.Y @AbkhazianChe.e -40;
+
+		pos @Izhitsa.VT @A.A -140;
+		pos @Izhitsa.VT @De.descender.jI.descender -100;
+		pos @Izhitsa.VT @Dje.Th 40;
+		pos @Izhitsa.VT @Zhe.XK -30;
+		pos @Izhitsa.VT @Je.J -130;
+		pos @Izhitsa.VT @El.jI -80;
+		pos @Izhitsa.VT @Lje.jb -80;
+		pos @Izhitsa.VT @Te.T 40;
+		pos @Izhitsa.VT @Ae.AE -140;
+		pos @Izhitsa.VT @BashkirKa.TK 40;
+		pos @Izhitsa.VT @AbkhazianChe.e -30;
+
+	# Uppercase Lowercase
+		pos @A.A @yi.ii -30;
+		pos @A.A @te.T -60;
+		pos @A.A @u.y -80;
+		pos @A.A @che._P -60;
+		pos @A.A @yer.Tb -60;
+		pos @A.A @bashkirka.TK -60;
+		pos @A.A @abkhazianche.e -60;
+
+		pos @Ge.IT @a.a -70;
+		pos @Ge.IT @ve.B -50;
+		pos @Ge.IT @ge.IT -50;
+		pos @Ge.IT @ge.IT.upturn -50;
+		pos @Ge.IT @de.descender.jI.descender -150;
+		pos @Ge.IT @dze.s -50;
+		pos @Ge.IT @yi.ii 40;
+		pos @Ge.IT @el.jI -50;
+		pos @Ge.IT @lje.jb -50;
+		pos @Ge.IT @te.T -50;
+		pos @Ge.IT @u.y -50;
+		pos @Ge.IT @kha.x -50;
+		pos @Ge.IT @tse.LI.descender -50;
+		pos @Ge.IT @che._P -50;
+		pos @Ge.IT @yer.Tb -50;
+		pos @Ge.IT @softsign.b -50;
+		pos @Ge.IT @bashkirka.TK -50;
+		pos @Ge.IT @abkhazianche.e -120;
+
+		pos @De.descender.jI.descender @yi.ii -30;
+		pos @De.descender.jI.descender @te.T -50;
+		pos @De.descender.jI.descender @u.y -20;
+		pos @De.descender.jI.descender @che._P -50;
+		pos @De.descender.jI.descender @yer.Tb -50;
+		pos @De.descender.jI.descender @bashkirka.TK -50;
+		pos @De.descender.jI.descender @abkhazianche.e -40;
+
+		pos @Dje.Th @yi.ii -30;
+
+		pos @Zhe.XK @te.T -60;
+		pos @Zhe.XK @u.y -50;
+		pos @Zhe.XK @che._P -50;
+		pos @Zhe.XK @yer.Tb -60;
+		pos @Zhe.XK @bashkirka.TK -60;
+		pos @Zhe.XK @abkhazianche.e -50;
+
+		pos @Ka.K @te.T -60;
+		pos @Ka.K @u.y -50;
+		pos @Ka.K @che._P -50;
+		pos @Ka.K @yer.Tb -60;
+		pos @Ka.K @bashkirka.TK -60;
+		pos @Ka.K @abkhazianche.e -50;
+
+		pos @Er.P @a.a -30;
+		pos @Er.P @de.descender.jI.descender -120;
+		pos @Er.P @el.jI -50;
+		pos @Er.P @lje.jb -50;
+
+		pos @Te.T @a.a -70;
+		pos @Te.T @ve.B -50;
+		pos @Te.T @ge.IT -50;
+		pos @Te.T @ge.IT.upturn -50;
+		pos @Te.T @de.descender.jI.descender -150;
+		pos @Te.T @dze.s -50;
+		pos @Te.T @yi.ii 40;
+		pos @Te.T @el.jI -50;
+		pos @Te.T @lje.jb -50;
+		pos @Te.T @te.T -50;
+		pos @Te.T @u.y -50;
+		pos @Te.T @kha.x -50;
+		pos @Te.T @tse.LI.descender -50;
+		pos @Te.T @che._P -50;
+		pos @Te.T @yer.Tb -50;
+		pos @Te.T @softsign.b -50;
+		pos @Te.T @bashkirka.TK -50;
+		pos @Te.T @abkhazianche.e -120;
+
+		pos @U.y @a.a -90;
+		pos @U.y @be.6 -50;
+		pos @U.y @ve.B -70;
+		pos @U.y @ge.IT -70;
+		pos @U.y @ge.IT.upturn -70;
+		pos @U.y @de.descender.jI.descender -120;
+		pos @U.y @dze.s -70;
+		pos @U.y @yi.ii 40;
+		pos @U.y @el.jI -110;
+		pos @U.y @lje.jb -110;
+		pos @U.y @te.T -70;
+		pos @U.y @u.y -50;
+		pos @U.y @kha.x -50;
+		pos @U.y @tse.LI.descender -70;
+		pos @U.y @che._P -70;
+		pos @U.y @yer.Tb -70;
+		pos @U.y @softsign.b -70;
+		pos @U.y @bashkirka.TK -70;
+		pos @U.y @abkhazianche.e -100;
+
+		pos @Kha.X @yi.ii 40;
+		pos @Kha.X @te.T -60;
+		pos @Kha.X @u.y -30;
+		pos @Kha.X @che._P -50;
+		pos @Kha.X @yer.Tb -60;
+		pos @Kha.X @bashkirka.TK -60;
+		pos @Kha.X @abkhazianche.e -40;
+
+		pos @Tse.LI.descender @yi.ii -30;
+		pos @Tse.LI.descender @te.T -50;
+		pos @Tse.LI.descender @u.y -20;
+		pos @Tse.LI.descender @che._P -50;
+		pos @Tse.LI.descender @yer.Tb -50;
+		pos @Tse.LI.descender @bashkirka.TK -50;
+		pos @Tse.LI.descender @abkhazianche.e -40;
+
+		pos @BashkirKa.TK @te.T -60;
+		pos @BashkirKa.TK @u.y -50;
+		pos @BashkirKa.TK @che._P -50;
+		pos @BashkirKa.TK @yer.Tb -60;
+		pos @BashkirKa.TK @bashkirka.TK -60;
+		pos @BashkirKa.TK @abkhazianche.e -50;
+
+		pos @Ue.Y @a.a -100;
+		pos @Ue.Y @be.6 -50;
+		pos @Ue.Y @ve.B -80;
+		pos @Ue.Y @ge.IT -80;
+		pos @Ue.Y @ge.IT.upturn -80;
+		pos @Ue.Y @de.descender.jI.descender -140;
+		pos @Ue.Y @dze.s -80;
+		pos @Ue.Y @yi.ii 40;
+		pos @Ue.Y @el.jI -120;
+		pos @Ue.Y @lje.jb -120;
+		pos @Ue.Y @te.T -80;
+		pos @Ue.Y @u.y -50;
+		pos @Ue.Y @kha.x -50;
+		pos @Ue.Y @tse.LI.descender -80;
+		pos @Ue.Y @che._P -80;
+		pos @Ue.Y @yer.Tb -80;
+		pos @Ue.Y @softsign.b -80;
+		pos @Ue.Y @bashkirka.TK -80;
+		pos @Ue.Y @abkhazianche.e -130;
+
+		pos @Izhitsa.VT @a.a -70;
+		pos @Izhitsa.VT @ve.B -50;
+		pos @Izhitsa.VT @ge.IT -50;
+		pos @Izhitsa.VT @ge.IT.upturn -50;
+		pos @Izhitsa.VT @de.descender.jI.descender -150;
+		pos @Izhitsa.VT @dze.s -50;
+		pos @Izhitsa.VT @yi.ii 40;
+		pos @Izhitsa.VT @el.jI -50;
+		pos @Izhitsa.VT @lje.jb -50;
+		pos @Izhitsa.VT @te.T -50;
+		pos @Izhitsa.VT @u.y -50;
+		pos @Izhitsa.VT @kha.x -50;
+		pos @Izhitsa.VT @tse.LI.descender -50;
+		pos @Izhitsa.VT @che._P -50;
+		pos @Izhitsa.VT @yer.Tb -50;
+		pos @Izhitsa.VT @softsign.b -50;
+		pos @Izhitsa.VT @bashkirka.TK -50;
+		pos @Izhitsa.VT @abkhazianche.e -120;
+
+	# Lowercase Lowercase
+		pos @ge.IT @a.a -40;
+		pos @ge.IT @de.descender.jI.descender -130;
+		pos @ge.IT @el.jI -50;
+		pos @ge.IT @lje.jb -50;
+
+		pos @ge.IT.upturn @a.a -40;
+		pos @ge.IT.upturn @de.descender.jI.descender -130;
+		pos @ge.IT.upturn @el.jI -50;
+		pos @ge.IT.upturn @lje.jb -50;
+
+		pos @de.descender.jI.descender @te.T -40;
+		pos @de.descender.jI.descender @che._P -40;
+		pos @de.descender.jI.descender @yer.Tb -40;
+		pos @de.descender.jI.descender @bashkirka.TK -40;
+		pos @de.descender.jI.descender @abkhazianche.e -40;
+
+		pos @dze.s @te.T -40;
+		pos @dze.s @u.y -20;
+		pos @dze.s @yer.Tb -40;
+		pos @dze.s @bashkirka.TK -40;
+
+		pos @yi.ii @yi.ii 80;
+
+		pos @lje.jb @te.T -50;
+		pos @lje.jb @u.y -30;
+		pos @lje.jb @yer.Tb -50;
+		pos @lje.jb @bashkirka.TK -50;
+
+		pos @te.T @a.a -40;
+		pos @te.T @de.descender.jI.descender -130;
+		pos @te.T @el.jI -50;
+		pos @te.T @lje.jb -50;
+
+		pos @u.y @a.a -20;
+		pos @u.y @de.descender.jI.descender -90;
+		pos @u.y @el.jI -40;
+		pos @u.y @lje.jb -40;
+
+		pos @tse.LI.descender @te.T -40;
+		pos @tse.LI.descender @che._P -40;
+		pos @tse.LI.descender @yer.Tb -40;
+		pos @tse.LI.descender @bashkirka.TK -40;
+		pos @tse.LI.descender @abkhazianche.e -40;
+
+		pos @yer.Tb @te.T -50;
+		pos @yer.Tb @u.y -30;
+		pos @yer.Tb @yer.Tb -50;
+		pos @yer.Tb @bashkirka.TK -50;
+
+		pos @softsign.b @te.T -50;
+		pos @softsign.b @u.y -30;
+		pos @softsign.b @yer.Tb -50;
+		pos @softsign.b @bashkirka.TK -50;
+
+	# Lowercase Uppercase
+		pos @a.a @Dje.Th -50;
+		pos @a.a @Te.T -50;
+		pos @a.a @U.y -20;
+		pos @a.a @BashkirKa.TK -50;
+		pos @a.a @Ue.Y -80;
+		pos @a.a @Izhitsa.VT -40;
+
+		pos @be.6 @Dje.Th -30;
+		pos @be.6 @Te.T -30;
+		pos @be.6 @BashkirKa.TK -30;
+		pos @be.6 @Ue.Y -20;
+		pos @be.6 @Izhitsa.VT -20;
+
+		pos @ve.B @Dje.Th -50;
+		pos @ve.B @Te.T -50;
+		pos @ve.B @U.y -20;
+		pos @ve.B @BashkirKa.TK -50;
+		pos @ve.B @Ue.Y -80;
+		pos @ve.B @Izhitsa.VT -40;
+
+		pos @ge.IT @A.A -60;
+		pos @ge.IT @De.descender.jI.descender -40;
+		pos @ge.IT @Dje.Th -50;
+		pos @ge.IT @Zhe.XK -60;
+		pos @ge.IT @Je.J -60;
+		pos @ge.IT @El.jI -40;
+		pos @ge.IT @Lje.jb -40;
+		pos @ge.IT @Te.T -50;
+		pos @ge.IT @U.y -40;
+		pos @ge.IT @Kha.X -50;
+		pos @ge.IT @Ae.AE -60;
+		pos @ge.IT @BashkirKa.TK -50;
+		pos @ge.IT @Ue.Y -80;
+		pos @ge.IT @Izhitsa.VT -30;
+
+		pos @ge.IT.upturn @A.A -60;
+		pos @ge.IT.upturn @De.descender.jI.descender -40;
+		pos @ge.IT.upturn @Je.J -60;
+		pos @ge.IT.upturn @El.jI -40;
+		pos @ge.IT.upturn @Lje.jb -40;
+		pos @ge.IT.upturn @Ae.AE -60;
+
+		pos @de.descender.jI.descender @Dje.Th -80;
+		pos @de.descender.jI.descender @Te.T -80;
+		pos @de.descender.jI.descender @U.y -40;
+		pos @de.descender.jI.descender @Che._P -30;
+		pos @de.descender.jI.descender @BashkirKa.TK -80;
+		pos @de.descender.jI.descender @Ue.Y -110;
+		pos @de.descender.jI.descender @Izhitsa.VT -40;
+
+		pos @dje.b @Dje.Th -50;
+		pos @dje.b @Te.T -50;
+		pos @dje.b @U.y -20;
+		pos @dje.b @BashkirKa.TK -50;
+		pos @dje.b @Ue.Y -80;
+		pos @dje.b @Izhitsa.VT -40;
+
+		pos @dze.s @Dje.Th -50;
+		pos @dze.s @Te.T -50;
+		pos @dze.s @U.y -20;
+		pos @dze.s @BashkirKa.TK -50;
+		pos @dze.s @Ue.Y -80;
+		pos @dze.s @Izhitsa.VT -40;
+
+		pos @yi.ii @Dje.Th 40;
+		pos @yi.ii @Te.T 40;
+		pos @yi.ii @U.y 40;
+		pos @yi.ii @Kha.X 40;
+		pos @yi.ii @BashkirKa.TK 40;
+		pos @yi.ii @Ue.Y 40;
+		pos @yi.ii @Izhitsa.VT 40;
+
+		pos @el.jI @Dje.Th -50;
+		pos @el.jI @Te.T -50;
+		pos @el.jI @U.y -20;
+		pos @el.jI @BashkirKa.TK -50;
+		pos @el.jI @Ue.Y -80;
+		pos @el.jI @Izhitsa.VT -40;
+
+		pos @lje.jb @Dje.Th -80;
+		pos @lje.jb @Te.T -80;
+		pos @lje.jb @U.y -20;
+		pos @lje.jb @Che._P -30;
+		pos @lje.jb @BashkirKa.TK -80;
+		pos @lje.jb @Ue.Y -120;
+		pos @lje.jb @Izhitsa.VT -80;
+
+		pos @te.T @A.A -60;
+		pos @te.T @De.descender.jI.descender -40;
+		pos @te.T @Dje.Th -50;
+		pos @te.T @Zhe.XK -60;
+		pos @te.T @Je.J -60;
+		pos @te.T @El.jI -40;
+		pos @te.T @Lje.jb -40;
+		pos @te.T @Te.T -50;
+		pos @te.T @U.y -40;
+		pos @te.T @Kha.X -50;
+		pos @te.T @Ae.AE -60;
+		pos @te.T @BashkirKa.TK -50;
+		pos @te.T @Ue.Y -80;
+		pos @te.T @Izhitsa.VT -30;
+
+		pos @u.y @A.A -80;
+		pos @u.y @De.descender.jI.descender -90;
+		pos @u.y @Dje.Th -50;
+		pos @u.y @Zhe.XK -40;
+		pos @u.y @Je.J -40;
+		pos @u.y @El.jI -40;
+		pos @u.y @Lje.jb -40;
+		pos @u.y @Te.T -50;
+		pos @u.y @U.y -40;
+		pos @u.y @Kha.X -30;
+		pos @u.y @Ae.AE -80;
+		pos @u.y @BashkirKa.TK -50;
+		pos @u.y @Ue.Y -50;
+		pos @u.y @Izhitsa.VT -30;
+
+		pos @kha.x @Dje.Th -50;
+		pos @kha.x @Te.T -50;
+		pos @kha.x @U.y -20;
+		pos @kha.x @BashkirKa.TK -50;
+		pos @kha.x @Ue.Y -50;
+		pos @kha.x @Izhitsa.VT -30;
+
+		pos @tse.LI.descender @Dje.Th -80;
+		pos @tse.LI.descender @Te.T -80;
+		pos @tse.LI.descender @U.y -40;
+		pos @tse.LI.descender @Che._P -30;
+		pos @tse.LI.descender @BashkirKa.TK -80;
+		pos @tse.LI.descender @Ue.Y -110;
+		pos @tse.LI.descender @Izhitsa.VT -40;
+
+		pos @che._P @Dje.Th -50;
+		pos @che._P @Te.T -50;
+		pos @che._P @U.y -20;
+		pos @che._P @BashkirKa.TK -50;
+		pos @che._P @Ue.Y -80;
+		pos @che._P @Izhitsa.VT -40;
+
+		pos @yer.Tb @Dje.Th -80;
+		pos @yer.Tb @Te.T -80;
+		pos @yer.Tb @U.y -20;
+		pos @yer.Tb @Che._P -30;
+		pos @yer.Tb @BashkirKa.TK -80;
+		pos @yer.Tb @Ue.Y -120;
+		pos @yer.Tb @Izhitsa.VT -80;
+
+		pos @softsign.b @Dje.Th -80;
+		pos @softsign.b @Te.T -80;
+		pos @softsign.b @U.y -20;
+		pos @softsign.b @Che._P -30;
+		pos @softsign.b @BashkirKa.TK -80;
+		pos @softsign.b @Ue.Y -120;
+		pos @softsign.b @Izhitsa.VT -80;
+
+		pos @bashkirka.TK @Dje.Th -50;
+		pos @bashkirka.TK @Te.T -50;
+		pos @bashkirka.TK @U.y -20;
+		pos @bashkirka.TK @BashkirKa.TK -50;
+		pos @bashkirka.TK @Ue.Y -80;
+		pos @bashkirka.TK @Izhitsa.VT -40;
+
+		pos @abkhazianche.e @Dje.Th -50;
+		pos @abkhazianche.e @Te.T -50;
+		pos @abkhazianche.e @U.y -20;
+		pos @abkhazianche.e @BashkirKa.TK -50;
+		pos @abkhazianche.e @Ue.Y -80;
+		pos @abkhazianche.e @Izhitsa.VT -40;
+
+} kernCyrillic;
+
+
+feature kern {
+
+	script latn;
+		lookup kernLatin;
+
+	script grek;
+		lookup kernGreek;
+
+	script cyrl;
+		lookup kernCyrillic;
+
+} kern;
