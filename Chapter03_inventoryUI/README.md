@@ -1,4 +1,8 @@
 # unity-cookbook-2020-ch03
+
+## Chapter 3: Inventory and Advanced UIs
+
+
 Assets for cookbook 2020 - chapter 3
 
 The **completed** Unity projects for each example can be found in their own repos as follows:
