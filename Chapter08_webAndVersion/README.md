@@ -16,4 +16,6 @@ The **completed** Unity projects for each example can be found in their own repo
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch08-06-create-asset-bundle
 
-- https://github.com/dr-matt-smith/unity-cookbook-2020-ch08-07-download-asset-bundle
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch08-07-load-from-streaming-assets
+
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch08-08-download-asset-bundle
