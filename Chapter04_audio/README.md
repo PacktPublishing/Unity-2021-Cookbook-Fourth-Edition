@@ -1,5 +1,5 @@
 # unity-cookbook-2020-ch04
-Assets for cookbook 2018 - chapter 4
+Assets for cookbook 2020 - chapter 4
 
 The **completed** Unity projects for each example can be found in their own repos as follows:
 
