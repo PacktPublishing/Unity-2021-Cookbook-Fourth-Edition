@@ -1,0 +1,10 @@
+Desert Tile set
+
+downloaded: July 2018
+
+source:
+https://www.gameart2d.com/free-desert-platformer-tileset.html
+
+licence:
+> For the game assets in Freebies section, it's under Creative Common Zero (CC0) a.k.a Public Domain license.
+https://www.gameart2d.com/license.html
