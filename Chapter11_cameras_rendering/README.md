@@ -20,7 +20,7 @@ The completed Unity projects for each example can be found in their own repos as
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch11-07-universal-pipeline
 
-- https://github.com/dr-matt-smith/unity-cookbook-2020-ch11-09-high-def-pipeline
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch11-08-high-def-pipeline
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch11-09-different-renderers
 
