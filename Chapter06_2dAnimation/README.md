@@ -20,13 +20,14 @@ The **completed** Unity projects for each example can be found in their own repo
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch06-07-tilemap-platformer
 
-- https://github.com/dr-matt-smith/unity-cookbook-2020-ch06-08-sprite-placeholder
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch06-08-physics-placeholder
 
-- https://github.com/dr-matt-smith/unity-cookbook-2020-ch06-09-2d-collision-matrix
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch06-09-editing-polygon-colliders
 
-- https://github.com/dr-matt-smith/unity-cookbook-2020-ch06-10-turn-off-gravity
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch06-10-sprite-masking
 
-- https://github.com/dr-matt-smith/unity-cookbook-2020-ch06-11-gamerecorder
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch06-11-explosion-force
 
-- https://github.com/dr-matt-smith/unity-cookbook-2020-ch06-12-sprite-masking
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch06-12-gamerecorder
+
 
