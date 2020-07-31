@@ -24,10 +24,9 @@ The **completed** Unity projects for each example can be found in their own repo
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch06-09-editing-polygon-colliders
 
-- https://github.com/dr-matt-smith/unity-cookbook-2020-ch06-10-sprite-masking
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch06-10-explosion-force
 
-- https://github.com/dr-matt-smith/unity-cookbook-2020-ch06-11-explosion-force
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch06-11-sprite-masking
 
-- https://github.com/dr-matt-smith/unity-cookbook-2020-ch06-12-gamerecorder
 
 
