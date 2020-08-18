@@ -10,13 +10,13 @@ The completed Unity projects for each example can be found in their own repos as
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch12-02-script-play-video
 
-- https://github.com/dr-matt-smith/unity-cookbook-2020-ch12-03-video-sequence
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch12-03-download-video
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch12-04-prepared-before-play
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch12-05-rendertexture
 
-- https://github.com/dr-matt-smith/unity-cookbook-2020-ch12-06-download-video
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch12-06-video-sequence
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch12-07-shader-graph
 
