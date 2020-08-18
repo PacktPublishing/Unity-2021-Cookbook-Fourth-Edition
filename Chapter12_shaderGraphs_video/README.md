@@ -14,6 +14,8 @@ The completed Unity projects for each example can be found in their own repos as
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch12-04-prepared-before-play
 
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch12-04b-coroutine-prepared
+
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch12-05-rendertexture
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch12-06-video-sequence
