@@ -1,3 +1,0 @@
-unity testing - code coverage
-
-https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@0.2/manual/index.ht
