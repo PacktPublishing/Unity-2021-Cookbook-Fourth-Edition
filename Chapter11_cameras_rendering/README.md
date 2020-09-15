@@ -12,6 +12,8 @@ The completed Unity projects for each example can be found in their own repos as
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch11-03-render-partial-screen
 
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch11-03b-floating-arrow-minimap
+
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch11-04-capture-camera-output
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch11-05-multipurpose-camera-rig
