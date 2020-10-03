@@ -8,4 +8,8 @@ The **completed** Unity projects for each example can be found in their own repo
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch14-01-reuse-unity-particles
 
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch14-02-particle-from-scratch
+
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch14-03-particle-texture-sheet
+
 
