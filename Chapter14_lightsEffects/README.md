@@ -14,3 +14,8 @@ The **completed** Unity projects for each example can be found in their own repo
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch14-04-collisions
 
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch14-05-explosion
+
+
+
+
