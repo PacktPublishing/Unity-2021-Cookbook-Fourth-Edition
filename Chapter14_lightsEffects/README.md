@@ -18,5 +18,7 @@ The **completed** Unity projects for each example can be found in their own repo
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch14-06-delayed-explosion
 
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch14-07-spotlight-cookie-texture
+
 
 
