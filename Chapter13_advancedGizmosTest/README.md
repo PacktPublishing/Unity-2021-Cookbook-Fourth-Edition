@@ -1,4 +1,4 @@
-# unity-cookbook-2020-ch13 - BONUS CHAPTER
+# unity-cookbook-2020-ch13
 Assets for cookbook 2020 - chapter 13
 The **completed** Unity projects for each example can be found in their own repos as follows:
 
