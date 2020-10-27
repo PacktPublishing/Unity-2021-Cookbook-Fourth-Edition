@@ -14,3 +14,6 @@ The **completed** Unity projects for each example can be found in their own repo
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch05-04-fading-transparency
 
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch05-05-probuilder
+
+
