@@ -1,13 +1,11 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 /* ----------------------------------------
  * class to demonstrate how to fade a material upon mouse click
  */ 
-public class FadeObject4_UseObjectInitialAlpha: MonoBehaviour 
-{	
-	// boolean variable for using the material's original alpha value at start
-	public bool useMaterialAlpha = false;
-
+public class FadeObject4_Coroutine: MonoBehaviour 
+{
 	// Time for fade duration, in seconds
 	public float fadeDurationSeconds = 1.0f;
 	
@@ -40,22 +38,9 @@ public class FadeObject4_UseObjectInitialAlpha: MonoBehaviour
 	
 		// set object material's original color as fadeColor
 		fadeColor = meshRenderer.material.color;
-
-		// IF using material's original alpha value, THEN use material's alpha value for alphaStart 
-		if (useMaterialAlpha) 
-			alphaStart = fadeColor.a;
 		
 		// start object's alpha at our alphaStart value
 		UpdateMaterialAlpha(alphaStart);
-	}
-	
-	/* ----------------------------------------
-	 * If "F" key pressed - start fading
-	 */
-	void Update()
-	{
-		if (isFading)
-			FadeAlpha();
 	}
 
 	/* ----------------------------------------
@@ -73,6 +58,18 @@ public class FadeObject4_UseObjectInitialAlpha: MonoBehaviour
 		
 		// set flag to say we are now fading
 		isFading = true;
+
+		// start the coroutine that does our fading
+		StartCoroutine(FadeFunction());		
+	}
+	
+	private IEnumerator FadeFunction()
+	{
+		while (isFading)
+		{
+			yield return new WaitForEndOfFrame();
+			FadeAlpha();
+		}
 	}
 
 	/*

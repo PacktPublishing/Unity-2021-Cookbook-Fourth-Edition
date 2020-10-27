@@ -3,10 +3,10 @@
 /* ----------------------------------------
  * class to demonstrate how to fade a material upon mouse click
  */ 
-public class FadeObject3_DestroyWhenFinished: MonoBehaviour 
-{
-	// boolean variable for destroying the object once it has become invisible
-	public bool destroyWhenFadingComplete = true;
+public class FadeObject3_UseObjectInitialAlpha: MonoBehaviour 
+{	
+	// boolean variable for using the material's original alpha value at start
+	public bool useMaterialAlpha = false;
 
 	// Time for fade duration, in seconds
 	public float fadeDurationSeconds = 1.0f;
@@ -40,6 +40,10 @@ public class FadeObject3_DestroyWhenFinished: MonoBehaviour
 	
 		// set object material's original color as fadeColor
 		fadeColor = meshRenderer.material.color;
+
+		// IF using material's original alpha value, THEN use material's alpha value for alphaStart 
+		if (useMaterialAlpha) 
+			alphaStart = fadeColor.a;
 		
 		// start object's alpha at our alphaStart value
 		UpdateMaterialAlpha(alphaStart);
@@ -50,15 +54,8 @@ public class FadeObject3_DestroyWhenFinished: MonoBehaviour
 	 */
 	void Update()
 	{
-//		if (Input.GetKeyDown(KeyCode.F))
-//		{
-//			StartFading();
-//		}
-
 		if (isFading)
-		{
 			FadeAlpha();
-		}
 	}
 
 	/* ----------------------------------------
@@ -78,14 +75,6 @@ public class FadeObject3_DestroyWhenFinished: MonoBehaviour
 		isFading = true;
 	}
 
-	private void EndFade()
-	{
-		isFading = false;
-		
-		if(destroyWhenFadingComplete)
-			Destroy (gameObject);
-	}
-	
 	/*
 	 * calculate current proportion of fading
 	 * use Lerp() to calculate new alpha value (from alphaStart ... alphaEnd)
@@ -101,7 +90,7 @@ public class FadeObject3_DestroyWhenFinished: MonoBehaviour
 		UpdateMaterialAlpha(alpha);
 
 		if (fadePercentage >= 1)
-			EndFade();
+			isFading = false;
 	}
 
 	private void UpdateMaterialAlpha(float newAlpha)

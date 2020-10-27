@@ -18,7 +18,7 @@ public class FadeObject: MonoBehaviour
 	// float value for transition's starting time
 	private float startTime;
 	
-	// variable for storing the object's meshRenderererer component
+	// variable for storing the object's meshRenderer component
 	private MeshRenderer meshRenderer;
 	
 	// variable for calculating the color of the material, including its alpha value
@@ -33,7 +33,7 @@ public class FadeObject: MonoBehaviour
 	 */
 	void Start () 
 	{
-		// store reference to object's meshRenderererer component into 'meshRenderer' variable
+		// store reference to object's meshRenderer component into 'meshRenderer' variable
 		meshRenderer = GetComponent<MeshRenderer>();
 	
 		// set object material's original color as fadeColor

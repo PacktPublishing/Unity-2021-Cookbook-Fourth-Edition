@@ -3,8 +3,11 @@
 /* ----------------------------------------
  * class to demonstrate how to fade a material upon mouse click
  */ 
-public class FadeObject2_KeyFToStart: MonoBehaviour 
+public class FadeObject2_DestroyWhenFinished: MonoBehaviour 
 {
+	// boolean variable for destroying the object once it has become invisible
+	public bool destroyWhenFadingComplete = true;
+
 	// Time for fade duration, in seconds
 	public float fadeDurationSeconds = 1.0f;
 	
@@ -47,21 +50,42 @@ public class FadeObject2_KeyFToStart: MonoBehaviour
 	 */
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.F))
-			StartFading();
+//		if (Input.GetKeyDown(KeyCode.F))
+//		{
+//			StartFading();
+//		}
 
 		if (isFading)
+		{
 			FadeAlpha();
+		}
+	}
+
+	/* ----------------------------------------
+	 * If object clicked on with mouse - start fading
+	  */	
+	void OnMouseUp()
+	{
+		StartFading();
 	}
 
 	private void StartFading()
 	{
-		// Set startTime as the current time
+		// store current time as the time fading started
 		startTime = Time.time;
-
+		
+		// set flag to say we are now fading
 		isFading = true;
 	}
 
+	private void EndFade()
+	{
+		isFading = false;
+		
+		if(destroyWhenFadingComplete)
+			Destroy (gameObject);
+	}
+	
 	/*
 	 * calculate current proportion of fading
 	 * use Lerp() to calculate new alpha value (from alphaStart ... alphaEnd)
@@ -77,7 +101,7 @@ public class FadeObject2_KeyFToStart: MonoBehaviour
 		UpdateMaterialAlpha(alpha);
 
 		if (fadePercentage >= 1)
-			isFading = false;
+			EndFade();
 	}
 
 	private void UpdateMaterialAlpha(float newAlpha)
