@@ -18,5 +18,7 @@ The **completed** Unity projects for each example can be found in their own repo
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch05-06-terrain-texture-painting
 
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch05-07-terrain-height-painting
+
 
 
