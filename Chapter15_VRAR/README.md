@@ -7,8 +7,15 @@ The **completed** Unity projects for each example can be found in their own repo
 
 1. https://github.com/dr-matt-smith/unity-cookbook-2020-ch15-10b-scene-from-scratch
 
+1. https://github.com/dr-matt-smith/unity-cookbook-2020-ch15-02-vr-360-video
 
-1. https://github.com/dr-matt-smith/unity-cookbook-2020-ch15-11-vr-360-video
+1. https://github.com/dr-matt-smith/unity-cookbook-2020-ch15-03-xr-editor
 
-1. https://github.com/dr-matt-smith/unity-cookbook-2020-ch15-12-xr-editor
+
+1. https://github.com/dr-matt-smith/unity-cookbook-2020-ch15-10-ar-foundation
+
+1. https://github.com/dr-matt-smith/unity-cookbook-2020-ch15-11-ar-furniture
+
+1. https://github.com/dr-matt-smith/unity-cookbook-2020-ch15-12-tracked-image
+
 
