@@ -1,5 +1,5 @@
 # unity-cookbook-2020 - 15 - Virtual Reality (VR) and Augmented Reality (AR)
-Assets and codes for Chapter 18 - Virtual Reality and Extra Features
+Assets and codes for Chapter 15 - Virtual and Augmented Reality (VR & AR)
 
 The **completed** Unity projects for each example can be found in their own repos as follows:
 
