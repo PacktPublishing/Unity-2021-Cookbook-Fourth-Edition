@@ -3,7 +3,7 @@ using System.Collections;
 
 /*
  * custom mouse cursors
- * adpated from:
+ * adapted from:
  * http://docs.unity3d.com/ScriptReference/Cursor.SetCursor.html
  */
 public class CustomCursorPointer : MonoBehaviour
