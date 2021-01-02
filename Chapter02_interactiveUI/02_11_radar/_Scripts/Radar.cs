@@ -105,7 +105,7 @@ public class Radar : MonoBehaviour
 		// three steps are required to get the blip for this object to appear on the radar:
 
 		// (a) The normalized position of the target is calculated by calling NormalisedPosition(...)
-		Vector3 normalisedTargetPosition = NormaisedPosition(playerPos, targetPos);
+		Vector3 normalisedTargetPosition = NormalisedPosition(playerPos, targetPos);
 
 		// (b) The position of the blip on the radar is then calculated from this normalized position
 		// by calling CalculateBlipPosition(...)
@@ -138,7 +138,7 @@ public class Radar : MonoBehaviour
 	// So, the Y-value of the Vector3 returned by this method will always be 0.
 	// So, for example, if a target was at exactly the same location as the player,
 	// the returned X, Y, Z Vector3 object would be (0, 0, 0).
-	private Vector3 NormaisedPosition(Vector3 playerPos, Vector3 targetPos)
+	private Vector3 NormalisedPosition(Vector3 playerPos, Vector3 targetPos)
 	{
 		// Since we know that target GameObject is no further from the player's character than insideRadarDistance,
 		// we can calculate a value in the -1 ... 0 ... +1 range for the X and Z
@@ -151,7 +151,7 @@ public class Radar : MonoBehaviour
 
 
 	//--------------------------------
-	// 'tagetPos' the (x,y,z) position of the target
+	// 'targetPos' the (x,y,z) position of the target
 	private Vector2 CalculateBlipPosition(Vector3 targetPos)
 	{
 		// First, we calculate angleToTarget: the angle from (0, 0, 0) to our normalized target position.
