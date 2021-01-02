@@ -4,7 +4,7 @@ using UnityEngine.UI;
 /*
  * class to present to user a 'radar'
  * showing different images positioned to indicate
- * relative distance and orintation to the 'Player' GameObject
+ * relative distance and orientation to the 'Player' GameObject
  */
 public class Radar : MonoBehaviour
 {
@@ -12,7 +12,7 @@ public class Radar : MonoBehaviour
 	// then they are canidates for displaying as blips on our radar
 	public float insideRadarDistance = 20;
 
-	// perentage of radar size taken up by each 'blip' image
+	// percentage of radar size taken up by each 'blip' image
 	public float blipSizePercentage = 5;
 
 	// images to display as blips
