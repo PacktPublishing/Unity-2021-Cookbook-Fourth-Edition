@@ -23,6 +23,5 @@ The **completed** Unity projects for each example can be found in their own repo
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch04-09_loop_scheduler
 
-- https://github.com/dr-matt-smith/unity-cookbook-2020-ch04-10-ambisonic-360
 
 
