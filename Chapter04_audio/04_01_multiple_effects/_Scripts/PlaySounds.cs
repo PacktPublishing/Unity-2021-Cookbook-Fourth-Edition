@@ -6,23 +6,23 @@ public class PlaySounds : MonoBehaviour
     public AudioClip clipEatCherry;
     public AudioClip clipExtraLife;
 
-    private AudioSource audioAudioSource;
+    private AudioSource audioSource;
 
     void Awake()
     {
-        audioAudioSource = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            audioAudioSource.PlayOneShot(clipEatCherry);
+            audioSource.PlayOneShot(clipEatCherry);
         }
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            audioAudioSource.PlayOneShot(clipExtraLife);
+            audioSource.PlayOneShot(clipExtraLife);
         }
     }
 
