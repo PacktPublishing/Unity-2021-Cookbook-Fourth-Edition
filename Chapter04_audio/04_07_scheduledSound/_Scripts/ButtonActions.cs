@@ -22,9 +22,11 @@ public class ButtonActions : MonoBehaviour
         int minutes = int.Parse(minutesText.text);
         int seconds = int.Parse(secondsText.text);
 
+        // pass the hours/minutes/seconds from the inputs on screen to our SoundManager object
         _scheduledSoundManager.PlayMusic(hours, minutes, seconds);
     }
 
+    // every frame update the time on screen
     private void Update()
     {
         clockText.text = "Time = " + DateTime.Now.ToString("HH:mm:ss");
