@@ -18,7 +18,7 @@ public static class ExtensionMethods
         audioSourceGO.transform.position = parent.transform.position;
 
         // add AudioSource component
-        AudioSource newAudioSource = audioSourceGO.AddComponent<AudioSource>() as AudioSource;
+        AudioSource newAudioSource = audioSourceGO.AddComponent<AudioSource>();
 
         // associate clip with AudioSource
         newAudioSource.clip = audioClip;
