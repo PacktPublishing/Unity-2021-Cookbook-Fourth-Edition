@@ -16,11 +16,11 @@ The **completed** Unity projects for each example can be found in their own repo
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch05-05-probuilder
 
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch05-05b-probuilder-house
+
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch05-06-terrain-texture-painting
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch05-07-terrain-height-painting
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch05-08-terrain-hole
-
-- https://github.com/dr-matt-smith/unity-cookbook-2020-ch05-09-probuilder2
 
