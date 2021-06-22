@@ -6,6 +6,8 @@ The **completed** Unity projects for each example can be found in their own repo
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch13-02-gizmo-grid-snap
 
+- https://github.com/dr-matt-smith/unity-cookbook-2020-ch13-02b-gizmo-grid-snap-singleton
+
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch13-03-saving-using-static-properties
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch13-04-saving-using-playerprefs
