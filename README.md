@@ -1,26 +1,23 @@
-# Unity-2020-Cookbook
-Unity 2020 Cookbook (Fourth Edition), published by Packt
+# Unity-2021-Cookbook
+Unity 2021 Cookbook (Fourth Edition), published by Packt
 
-<a href="https://www.packtpub.com/game-development/unity-2020-cookbook"><img src="/images/cover.png" alt="Unity 2020 Cookbook" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/game-development/unity-2020-cookbook"><img src="/images/cover.png" alt="Unity 2021 Cookbook" height="256px" align="right"></a>
 
-This is the code repository for [Unity 2020 Cookbook](https://www.packtpub.com/game-development/unity-2020-cookbook), published by Packt.
+This is the code repository for [Unity 2021 Cookbook](https://www.packtpub.com/game-development/unity-2020-cookbook), published by Packt.
 
 **Over 160 recipes to take your 2D and 3D game and virtual reality development to the next level**
 
 ## What is this book about?
-With the help of the Unity 2020 Cookbook, you’ll discover how to make the most of the UI system, learn to work with external resources and files, and understand how to animate both 2D and 3D characters and game scene objects using Unity's Mecanim animation toolsets.
+With the help of the Unity 2021 Cookbook, you’ll discover how to make the most of the UI system, learn to work with external resources and files, and understand how to animate both 2D and 3D characters and game scene objects using Unity's Mecanim animation toolsets.
 
 This book covers the following exciting features: 
-* Get creative with Unity’s shaders and learn to build your own shaders with the new Shader Graph tool
+* Get creative with Unity’s shaders and learn to build your own shaders with the Shader Graph tool
 * Create a text and image character dialog with the free Fungus Unity plugin
-* Explore new features integrated into Unity 2020, including AAA, BBB, CCC
+* Explore new features integrated into Unity 2021, including Code Coverage, the new Input System, and ProBuilder integration
 * Add audio elements to your games, including sound effects and background music
 * Intelligently control camera movements using the Cinemachine and timeline features
-* Learn to create AR and VR games with Unity
+* Learn to create AR and VR games with Unity, and publish on the web as WebXR
 
-## 4 free PDF chapters (chapters 16-19)
-
-Chapters 16-19 wouldn't fit in the print edition, so we're making them available free to download! The PDFs are in the corresponding Github chapter folders (in a folder named `bonus_chapter_PDF`), and are a great place to start if you want to explore the style of Unity game recipes you'll find the in book.
 
 If you feel this book is for you, get your [copy](https://www.packtpub.com/game-development/unity-2020-cookbook) today!
 
@@ -56,9 +53,9 @@ With the following software and hardware list you can run all code files present
 
 | Chapter  | Software required         | Operating System               | Graphics card - GPU                            |
 | -------- | --------------------------| -------------------------------| -----------------------------------------------|
-| all      | Unity 2020.1 or later     | Windows 64-bit 7SP1 / 10       | DX10, DX11, DX12 capable                       |
-| all      | Unity 2020.1 or later     | Mac OS X 10.12.6+              | Metal-capable (Intel or AMD)                   |
-| all      | Unity 2020.1 or later     | Ubuntu 16.04 / 18.04 / CentOS 7| OpenGL 3.2+ or Vulkan-capable, Nvidia and AMD  |
+| all      | Unity 2021.1 or later     | Windows 64-bit 7SP1 / 10       | DX10, DX11, DX12 capable                       |
+| all      | Unity 2021.1 or later     | Mac OS X 10.12.6+              | Metal-capable (Intel or AMD)                   |
+| all      | Unity 2021.1 or later     | Ubuntu 16.04 / 18.04 / CentOS 7| OpenGL 3.2+ or Vulkan-capable, Nvidia and AMD  |
 
 Check [here](https://docs.unity3d.com/Manual/system-requirements.html#editor) for latest Unity editor requirements 
 
