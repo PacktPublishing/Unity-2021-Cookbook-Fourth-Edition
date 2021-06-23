@@ -19,7 +19,7 @@ This book covers the following exciting features:
 * Learn to create AR and VR games with Unity, and publish on the web as WebXR
 
 
-If you feel this book is for you, get your [copy](https://www.packtpub.com/game-development/unity-2020-cookbook) today!
+If you feel this book is for you, get your [copy](https://www.packtpub.com/product/unity-2021-cookbook-fourth-edition/9781839217616) today!
 
 <a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
 alt="https://www.packtpub.com/" border="5" /></a>
