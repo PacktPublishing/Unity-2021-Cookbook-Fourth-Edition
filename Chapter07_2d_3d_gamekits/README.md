@@ -8,6 +8,8 @@ The **completed** Unity projects for each example can be found in their own repo
 
 - https://github.com/dr-matt-smith/unity-cookbook-2021-ch07-01-3Dgamekit
 
+- https://github.com/dr-matt-smith/unity-cookbook-2021-ch07-01b-3DgamekitLite
+
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch07-02-2D-gamekit
 
 - https://github.com/dr-matt-smith/unity-cookbook-2020-ch07-03-import-mixamo-character
