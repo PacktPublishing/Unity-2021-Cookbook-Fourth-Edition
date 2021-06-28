@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class BombFeature : MonoBehaviour
 {
     public GameObject bombPrefab;
-    
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Keyboard.current[Key.B].wasReleasedThisFrame)
         {
             // create bomb at same location as this player
-            Instantiate(bombPrefab, transform.position, transform.rotation);            
+            Instantiate(bombPrefab, transform.position, transform.rotation);
         }
     }
-    
 }
