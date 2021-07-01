@@ -18,3 +18,12 @@ The **completed** Unity projects for each example can be found in their own repo
 1. https://github.com/dr-matt-smith/unity-cookbook-2020-ch15-09-ar-furniture
 
 1. https://github.com/dr-matt-smith/unity-cookbook-2020-ch15-10-tracked-image
+
+---
+
+WebGL on Github pages publish test:
+
+Code:
+https://github.com/dr-matt-smith/unity-cookbook-2021-ch15-web-gl-export-test
+
+Github.io pages:
