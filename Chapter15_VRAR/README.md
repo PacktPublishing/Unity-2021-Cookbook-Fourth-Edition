@@ -27,3 +27,4 @@ Code:
 https://github.com/dr-matt-smith/unity-cookbook-2021-ch15-web-gl-export-test
 
 Github.io pages:
+https://dr-matt-smith.github.io/unity-cookbook-2021-ch15-web-gl-export-test/
