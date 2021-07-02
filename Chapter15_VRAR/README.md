@@ -28,3 +28,11 @@ https://github.com/dr-matt-smith/unity-cookbook-2021-ch15-web-gl-export-test
 
 Github.io pages:
 https://dr-matt-smith.github.io/unity-cookbook-2021-ch15-web-gl-export-test/
+
+---
+
+NEW
+
+1. https://github.com/dr-matt-smith/unity-cookbook-2021-ch15-01-vr-setup
+
+1. https://github.com/dr-matt-smith/unity-cookbook-2021-ch15-02-mock-hmd
