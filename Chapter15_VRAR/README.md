@@ -3,6 +3,15 @@ Assets and codes for Chapter 15 - Virtual and Augmented Reality (VR & AR)
 
 The **completed** Unity projects for each example can be found in their own repos as follows:
 
+
+1. https://github.com/dr-matt-smith/unity-cookbook-2021-ch15-01-vr-setup
+
+1. https://github.com/dr-matt-smith/unity-cookbook-2021-ch15-02-quest-app
+
+1. https://github.com/dr-matt-smith/unity-cookbook-2021-ch15-03-mock-hmd
+
+--- older -----
+
 1. https://github.com/dr-matt-smith/unity-cookbook-2020-ch15-01-webxr-basic-scene
 
 1. https://github.com/dr-matt-smith/unity-cookbook-2020-ch15-02-scene-from-scratch
@@ -28,11 +37,3 @@ https://github.com/dr-matt-smith/unity-cookbook-2021-ch15-web-gl-export-test
 
 Github.io pages:
 https://dr-matt-smith.github.io/unity-cookbook-2021-ch15-web-gl-export-test/
-
----
-
-NEW
-
-1. https://github.com/dr-matt-smith/unity-cookbook-2021-ch15-01-vr-setup
-
-1. https://github.com/dr-matt-smith/unity-cookbook-2021-ch15-02-mock-hmd
