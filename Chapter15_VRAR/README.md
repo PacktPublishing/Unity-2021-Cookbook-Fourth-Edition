@@ -14,7 +14,7 @@ The **completed** Unity projects for each example can be found in their own repo
 
 1. (Github.io pages) https://dr-matt-smith.github.io/unity-cookbook-2021-ch15-web-gl-export-test/
 
-1. https://github.com/dr-matt-smith/unity-cookbook-2020-ch15-03-vr-360-video
+1. https://github.com/dr-matt-smith/unity-cookbook-2021-ch15-05-vr-360-video
 
 1. https://github.com/dr-matt-smith/unity-cookbook-2020-ch15-06-ar-samples
 
