@@ -24,6 +24,6 @@ The **completed** Unity projects for each example can be found in their own repo
 
 1. https://github.com/dr-matt-smith/unity-cookbook-2021-ch15-09-ar-plane-highligher
 
-1. https://github.com/dr-matt-smith/unity-cookbook-2020-ch15-09-ar-furniture
+1. https://github.com/dr-matt-smith/unity-cookbook-2021-ch15-10-ar-furniture
 
-1. https://github.com/dr-matt-smith/unity-cookbook-2020-ch15-10-tracked-image
+1. https://github.com/dr-matt-smith/unity-cookbook-2021-ch15-11-tracked-image
