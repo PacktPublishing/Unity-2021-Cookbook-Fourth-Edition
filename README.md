@@ -1,7 +1,7 @@
 # Unity-2021-Cookbook
 Unity 2021 Cookbook (Fourth Edition), published by Packt
 
-<a href="https://www.packtpub.com/game-development/unity-2020-cookbook"><img src="/images/cover2021.png" alt="Unity 2021 Cookbook" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/product/unity-2021-cookbook-fourth-edition/9781839217616"><img src="/images/cover2021.png" alt="Unity 2021 Cookbook" height="256px" align="right"></a>
 
 This is the code repository for [Unity 2021 Cookbook](https://www.packtpub.com/product/unity-2021-cookbook-fourth-edition/9781839217616), published by Packt.
 
