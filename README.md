@@ -69,7 +69,7 @@ Check [here](https://docs.unity3d.com/Manual/system-requirements.html#editor) fo
 
     - is computing senior lecturer at the Technological University of Dublin, Ireland.
         
-    - Matt been programming games since the Sinclar ZX80 and submitted 2 games for his computing O-level exam at the age of 16 in 1983 (he only got a 'B' grade - a scandal!). After a year of commercial business programming in the late 80s he decided to become a full time academic, researching and lecturering at Aberdeen University (Scotland), the Open University (UK), Winchester University (UK), Middlesex University (UK), and since 2002 at what is now TU Dublin (Ireland). He leads the [**DRIVE**](https://github.com/dr-matt-smith) research group in the Blanchardstown Campus in North Dublin.
+    - Matt been programming games since the Sinclar ZX80 and submitted 2 games for his computing O-level exam at the age of 16 in 1983 (he only got a 'B' grade - a scandal!). After a year of commercial business programming in the late 80s he decided to become a full time academic, researching and lecturering at Aberdeen University (Scotland), the Open University (UK), Winchester University (UK), Middlesex University (UK), and since 2002 at what is now TU Dublin (Ireland). He leads the [**DRIVE**](http://drive-rg.ie/) research group in the Blanchardstown Campus in North Dublin.
     
 - [**Shaun Ferns**](https://github.com/shaunferns)
 
