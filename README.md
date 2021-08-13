@@ -73,9 +73,11 @@ Check [here](https://docs.unity3d.com/Manual/system-requirements.html#editor) fo
     
 - [**Shaun Ferns**](https://github.com/shaunferns)
 
-    - is computing lecturer at the Technological University of Dublin, Ireland.
+    - is a lecturer at the Technological University of Dublin, Ireland.
 
-    - more here
+    - From 2016 he has been primarily researching and teaching multimedia development and prior to that was involved in the delivery of several engineering programmes. 
+  He is currently exploring the opportunities transmedia provides in improving user experience and engagement in cultural archive artefacts and serious games for the built environment.
+
 
 ### Suggestions and Feedback
 (LINK) if you have any feedback or suggestions.
