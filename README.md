@@ -64,9 +64,3 @@ Check [here](https://docs.unity3d.com/Manual/system-requirements.html#editor) fo
 **Matt Smith** is computing academic at TUDublin (Technological University of Dublin) Ireland, where he leads the DRIVE Research Group (Digital Realities, Interaction, and Virtual Environments). Matt started computer programming on a brand new ZX80 and submitted 2 games for his computing O-level exam. After nearly 10 years as a full-time student on a succession of scholarships, he gained several degrees in computing, including a Ph.D. in computational musicology. In 1985, Matt wrote the lyrics and was in the band whose music appeared on the audio cassette carrying the computer game Confuzion. Matt is a documentation author for the open-source Unity Fungus visual scripting and dialogue system.
 
 **Shaun** is a lecturer at Technological University Dublin. He is currently teaching on the BA (Hons) in Creative Digital Media where he is lead in the delivery of the Multimedia Stream. He is currently exploring serious games for construction-related training as well as the opportunities transmedia provides in improving user experience and engagement in cultural archive artifacts. His educational research is currently driven by his interest in self-determined learning (heutagogy), rhizomatic learning theory, micro-credentialing /digital badging, and curriculum development.
-
-
-
-
-
-
