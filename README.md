@@ -5,19 +5,17 @@ Unity 2021 Cookbook (Fourth Edition), published by Packt
 
 This is the code repository for [Unity 2021 Cookbook](https://www.packtpub.com/product/unity-2021-cookbook-fourth-edition/9781839217616), published by Packt.
 
-**Over 160 recipes to take your 2D and 3D game and virtual reality development to the next level**
+**Over 140+ recipes to take your Unity game development skills to the next level**
 
 ## What is this book about?
-With the help of the Unity 2021 Cookbook, you’ll discover how to make the most of the UI system, learn to work with external resources and files, and understand how to animate both 2D and 3D characters and game scene objects using Unity's Mecanim animation toolsets.
+Unity is the most widely used game development platform worldwide. Available for Windows, macOS, and Linux, Unity is a powerful and easy-to-use one-stop solution for creating games for mobile, web, desktop and games consoles.
 
 This book covers the following exciting features: 
-* Get creative with Unity’s shaders and learn to build your own shaders with the Shader Graph tool
-* Create a text and image character dialog with the free Fungus Unity plugin
-* Explore new features integrated into Unity 2021, including Code Coverage, the new Input System, and ProBuilder integration
-* Add audio elements to your games, including sound effects and background music
-* Intelligently control camera movements using the Cinemachine and timeline features
-* Learn to create AR and VR games with Unity, and publish on the web as WebXR
-
+* Discover how to add core game features to your projects with C# scripting
+* Create powerful and stylish user interfaces with Unity’s UI system, including power bars, radars, and button-driven scene changes
+* Work with essential audio features, including background music and sound effects
+* Discover Cinemachine and Timeline in Unity to intelligently control camera movements
+* Add visual effects such as smoke and explosions by creating and customizing particle systems
 
 If you feel this book is for you, get your [copy](https://www.packtpub.com/product/unity-2021-cookbook-fourth-edition/9781839217616) today!
 
@@ -30,24 +28,22 @@ All of the code is organized into folders. For example, Chapter01.
 
 The code will look like the following:
 ```
-using UnityEngine; 
-using System.Collections; 
 
-public class ScrollZ : MonoBehaviour { 
-  public float scrollSpeed = 20; 
+void Update() {
+  float xMove = Input.GetAxis("Horizontal");
+  float yMove = Input.GetAxis("Vertical");
 
-  void Update () { 
-    Vector3 pos = transform.position; 
-    Vector3 localVectorUp = transform.TransformDirection(0,1,0); 
-    pos += localVectorUp * scrollSpeed * Time.deltaTime; 
-    transform.position = pos; 
-  } 
-} 
+  float xSpeed = xMove * speed;
+  float ySpeed = yMove * speed;
+
+  newVelocity = new Vector2(xSpeed, ySpeed);
+}
+
 ```
 
 **Following is what you need for this book:**
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-19).
+With the following software and hardware list you can run all code files present in the book (Chapter 1-15).
 
 ### Software and Hardware List
 
@@ -57,27 +53,20 @@ With the following software and hardware list you can run all code files present
 | all      | Unity 2021.1 or later     | Mac OS X 10.12.6+              | Metal-capable (Intel or AMD)                   |
 | all      | Unity 2021.1 or later     | Ubuntu 16.04 / 18.04 / CentOS 7| OpenGL 3.2+ or Vulkan-capable, Nvidia and AMD  |
 
-Check [here](https://docs.unity3d.com/Manual/system-requirements.html#editor) for latest Unity editor requirements 
+Check [here](https://docs.unity3d.com/Manual/system-requirements.html#editor) for latest Unity editor requirements.
 
 ### Related products <Other books you may enjoy>
+* Game Development Patterns with Unity 2021 - Second Edition [[Packt]](https://www.packtpub.com/product/game-development-patterns-with-unity-2021-second-edition/9781800200814) [[Amazon]](https://www.amazon.com/dp/1800200811)
 
-(links here)
+* Augmented Reality with Unity AR Foundation [[Packt]](https://www.packtpub.com/product/augmented-reality-with-unity-ar-foundation/9781838982591) [[Amazon]](https://www.amazon.com/dp/1838982590)
 
-## Get to Know the Authors
+## Get to Know the Author(s)
+**Matt Smith** is computing academic at TUDublin (Technological University of Dublin) Ireland, where he leads the DRIVE Research Group (Digital Realities, Interaction, and Virtual Environments). Matt started computer programming on a brand new ZX80 and submitted 2 games for his computing O-level exam. After nearly 10 years as a full-time student on a succession of scholarships, he gained several degrees in computing, including a Ph.D. in computational musicology. In 1985, Matt wrote the lyrics and was in the band whose music appeared on the audio cassette carrying the computer game Confuzion. Matt is a documentation author for the open-source Unity Fungus visual scripting and dialogue system.
 
-- [**Matt Smith**](https://github.com/dr-matt-smith)
-
-    - is computing senior lecturer at the Technological University of Dublin, Ireland.
-        
-    - Matt been programming games since the Sinclar ZX80 and submitted 2 games for his computing O-level exam at the age of 16 in 1983 (he only got a 'B' grade - a scandal!). After a year of commercial business programming in the late 80s he decided to become a full time academic, researching and lecturering at Aberdeen University (Scotland), the Open University (UK), Winchester University (UK), Middlesex University (UK), and since 2002 at what is now TU Dublin (Ireland). He leads the [**DRIVE**](http://drive-rg.ie/) research group in the Blanchardstown Campus in North Dublin.
-    
-- [**Shaun Ferns**](https://github.com/shaunferns)
-
-    - is a lecturer at the Technological University of Dublin, Ireland.
-
-    - From 2016 he has been primarily researching and teaching multimedia development and prior to that was involved in the delivery of several engineering programmes. 
-  He is currently exploring the opportunities transmedia provides in improving user experience and engagement in cultural archive artefacts and serious games for the built environment.
+**Shaun** is a lecturer at Technological University Dublin. He is currently teaching on the BA (Hons) in Creative Digital Media where he is lead in the delivery of the Multimedia Stream. He is currently exploring serious games for construction-related training as well as the opportunities transmedia provides in improving user experience and engagement in cultural archive artifacts. His educational research is currently driven by his interest in self-determined learning (heutagogy), rhizomatic learning theory, micro-credentialing /digital badging, and curriculum development.
 
 
-### Suggestions and Feedback
-(LINK) if you have any feedback or suggestions.
+
+
+
+
