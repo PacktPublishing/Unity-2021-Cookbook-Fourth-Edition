@@ -19,7 +19,7 @@ The **completed** Unity projects for each example can be found in their own repo
 
 NOTE: 
 Fungus may be deprecated on the Unity Asset store, but you can always download the latest Fungus “.unitypackage” from Github:
-- [https://github.com/snozbot/fungus/releases](ttps://github.com/snozbot/fungus/releases)
+- https://github.com/snozbot/fungus/releases
 
 and then load this into their Unity project
 -	Either drag the unitypackage file into the Project panel, or use menu: Assets > Import Package > Custom Package
